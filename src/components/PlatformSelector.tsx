@@ -5,7 +5,7 @@ import { Platform } from "../hooks/useGames";
 
 interface Props {
   onselectPlatform: (platform: Platform) => void;
-  selectedPlatform: Platform | nul;
+  selectedPlatform: Platform | null;
 }
 
 const PlatformSelector = ({ onselectPlatform, selectedPlatform }: Props) => {
