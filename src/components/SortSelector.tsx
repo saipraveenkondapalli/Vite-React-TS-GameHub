@@ -10,7 +10,7 @@ function SortSelector({ onSelectSortOrder, selectedSortOrder }: Props) {
     { value: "", label: "Relavance" },
     { value: "-metacritic", label: "Popularity" },
     { value: "-name", label: "Name" },
-    { value: "-released", label: "Release Data" },
+    { value: "-released", label: "Release Date" },
     { value: "-added", label: "Added Date" },
     { value: "-rating", label: "Average Rating" },
   ];

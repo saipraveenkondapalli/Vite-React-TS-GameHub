@@ -26,6 +26,7 @@ const GameGrid = ({ gameQuery }: Props) => {
               <GameCardSkeleton key={skeleton} />
             </GameCardContainer>
           ))}
+
         {data.map((game) => (
           <GameCard key={game.id} game={game} />
         ))}
