@@ -6,6 +6,7 @@ import CriticScore from "../CriticScore";
 
 import getCroppedImage from "../services/image-url";
 import GameCardContainer from "./GameCardContainer";
+import Emoji from "./Emoji";
 
 interface GameCardProps {
   game: Game;
@@ -24,6 +25,7 @@ const GameCard = ({ game }: GameCardProps) => {
             <CriticScore score={game.metacritic} />
           </HStack>
           <Heading fontSize="2xl">{game.name}</Heading>
+          <Emoji rating={game.rating_top} />
         </CardBody>
       </Card>
     </GameCardContainer>
